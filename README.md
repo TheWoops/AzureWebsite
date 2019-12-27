@@ -1,6 +1,6 @@
 # [Source files for thewoops.com](https://startbootstrap.com/template-overviews/small-business/)
 
-[www.thewoops.com](http://startbootstrap.com/template-overviews/small-business/) is a responsive landing page about myself hosted on Azure.
+www.thewoops.com is a responsive landing page about myself hosted on Azure.
 
 
 ## Status

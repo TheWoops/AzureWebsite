@@ -2,10 +2,20 @@
 }
 
 .card-header {padding: 0px}
+.edu-body {height: 35vh;}
 
 .fa-star{font-size: 20px;
     color: #ffe340;
     padding-right: 20%;
+}
+
+
+.span-img {
+    height: 100%;
+    /* optional for right align */
+    display: flex; 
+    object-fit: cver;
+    justify-content: flex-end;
 }
 
 

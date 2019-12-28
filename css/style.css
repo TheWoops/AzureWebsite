@@ -2,7 +2,6 @@
 }
 
 .card-header {padding: 0px}
-.edu-body {height: 35vh;}
 
 .fa-star{font-size: 20px;
     color: #ffe340;
@@ -10,13 +9,133 @@
 }
 
 
-.span-img {
-    height: 100%;
-    /* optional for right align */
-    display: flex; 
-    object-fit: cver;
-    justify-content: flex-end;
+.edu-fa-ul {
+    margin-bottom: 0;
 }
+
+
+/* Responsive Design*/
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .container {
+        font-size: 1.2rem;
+        /* background-color: red; */
+    }
+    .position-container {
+        font-size: 1.2rem;
+
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .h4 {
+        font-weight: bold;
+        font-size: 1.0em;
+    }
+    .pl-1 {
+        font-size: 3.0vw;
+    }
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .container {
+    font-size: 1.2rem;
+    /* background-color: green; */
+    }
+    .position-container {
+        font-size: 1.2rem;
+
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+    .h4 {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .pl-1 {
+        font-size: 2.5vw;
+    }
+}
+ 
+ /* Medium devices (landscape tablets, 768px and up) -ipad? */
+ @media only screen and (min-width: 768px) {
+     .container {
+    font-size: 1.2rem;
+    /* background-color: blue; */
+    }
+    .position-container {
+        font-size: 1.2rem;
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    .h4 {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .pl-1 {
+        font-size: 2vw;
+    }
+
+}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .container {
+        font-size: 1.2rem;
+        /* background-color: yellow; */
+    }
+    .position-container {
+        font-size: 1.2rem;
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .h4 {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .pl-1 {
+        font-size: 1.5vw;
+    }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    .container {
+        font-size: 1.2rem;
+        /* background-color: lightblue; */
+     }
+     .position-container {
+        font-size: 1.2rem;
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+     .h4 {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    .pl-1 {
+        font-size: 1vw;
+    }
+ } 
+
+
+
+
+
+
+
 
 
 

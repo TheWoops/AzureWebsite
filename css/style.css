@@ -1,12 +1,195 @@
-.fa-heart{font-size: 20px; color: #e91d2b
+.fa-heart{
+    font-size: 20px; 
+    color: #e91d2b
 }
 
 .card-header {padding: 0px}
 
-.fa-star{font-size: 20px;
-    color: #ffe340;
-    padding-right: 20%;
+
+.edu-fa-ul {
+    margin-bottom: 0;
 }
+
+.p-text {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.cv-img {
+    width: 50%;
+    margin: 4vh;
+}
+
+.company {
+    color:blue ;
+}
+
+
+.overview{
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+
+
+.video-bg {
+    position: absolute;
+    z-index: -1; /* below parent element */
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/* Responsive Design*/
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .container {
+        font-size: 1.2rem;
+        /* background-color: red; */
+    }
+    .position-container {
+        font-size: 1.2rem;
+
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .h4 {
+        font-weight: bold;
+        font-size: 1.0em;
+    }
+    .pl-1 {
+        font-size: 3.1vw;
+    }
+    .fa-star{
+        font-size: 3vw;
+        color: #ffe340;
+        padding-right: 20%;
+    }
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .container {
+    font-size: 1.2rem;
+    /* background-color: green;  */
+    }
+    .position-container {
+        font-size: 1.2rem;
+
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+    .h4 {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .pl-1 {
+        font-size: 2.3vw;
+    }
+    .fa-star{
+        font-size: 2.3vw;
+        color: #ffe340;
+        padding-right: 20%;
+    }
+}
+ 
+ /* Medium devices (landscape tablets, 768px and up) -ipad? */
+ @media only screen and (min-width: 768px) {
+     .container {
+    font-size: 1.2rem;
+    /* background-color: blue;  */
+    }
+    .position-container {
+        font-size: 1.2rem;
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    .h4 {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .pl-1 {
+        font-size: 2vw;
+    }
+    .fa-star{
+        font-size: 2vw;
+        color: #ffe340;
+        padding-right: 20%;
+    }
+
+}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .container {
+        font-size: 1.2rem;
+        /* background-color: yellow;  */
+    }
+    .position-container {
+        font-size: 1.2rem;
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .h4 {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .pl-1 {
+        font-size: 1.5vw;
+    }
+    .fa-star{
+        font-size: 1.5vw;
+        color: #ffe340;
+        padding-right: 20%;
+    }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    .container {
+        font-size: 1.2rem;
+        /* background-color: lightblue;  */
+     }
+     .position-container {
+        font-size: 1.2rem;
+    }
+    .h1 {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+     .h4 {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    .pl-1 {
+        font-size: 1.0vw;
+    }
+    .fa-star{
+        font-size: 1.0vw;
+        color: #ffe340;
+        padding-right: 20%;
+    }
+ } 
+
+
+
+
+
+
+
 
 
 

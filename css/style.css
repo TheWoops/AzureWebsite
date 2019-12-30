@@ -3,6 +3,22 @@
     color: #e91d2b
 }
 
+/*Scroll to top button*/
+#btnScrollToTop{
+    position: fixed; /*button floads on top of all the contet*/
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #105685;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 .card-header {padding: 0px}
 
 .my-section {

@@ -12,8 +12,10 @@
 
   <!-- My stylesheet -->
   <link rel="stylesheet" href = "css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
+  <script src="vendor/jquery/jquery.min.js"></script>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -23,13 +25,14 @@
   <link rel=stylesheet href="css/all.min.css" >
   <link rel=stylesheet href="css/fontawesome.min.css" >
 
+
   <!-- My stylesheet -->
   <link rel="stylesheet" href = "css/style.css">
 
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset='75'>
+<body data-spy="scroll" data-target=".navbar" data-offset='80'>
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -391,6 +394,10 @@
 
   </div>
 
+  <button id="btnScrollToTop">
+    <i class="material-icons">arrow_upward</i>
+  </button>
+
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
@@ -400,8 +407,17 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+    btnScrollToTop.addEventListener("click", function (){
+      $("html, body").animate({ scrollTop: 0}, "slow");
+    })
+
+  </script>
+
 
 </body>
 

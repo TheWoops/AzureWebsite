@@ -19,6 +19,18 @@
     cursor: pointer;
 }
 
+/*Scrollbar - not working in firefox*/
+::-webkit-scrollbar{
+        width: 20px;
+
+        background-color: #105685;
+    }
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 115, 0);
+}
+
+
+
 .card-header {padding: 0px}
 
 .my-section {
@@ -203,6 +215,8 @@
         font-size: 1.0vw;
         color: #ffe340;
     }
+
+
  } 
 
 

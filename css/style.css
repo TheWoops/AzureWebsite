@@ -3,6 +3,8 @@
     color: #e91d2b
 }
 
+.fa-
+
 /*Scroll to top button*/
 #btnScrollToTop{
     position: fixed; /*button floads on top of all the contet*/
@@ -30,7 +32,6 @@
 }
 
 
-
 .card-header {padding: 0px}
 
 .my-section {
@@ -38,13 +39,7 @@
     padding-bottom: 5vh;
     min-height: 30vh;
 }
-
-.fa-ul{
-    margin-bottom: 0;
-    /* background-color: greenyellow; */
-    margin-left:0;
-} 
-
+ 
 .p-text {
     text-align: justify;
     hyphens: auto;
@@ -84,7 +79,7 @@
  @media only screen and (max-width: 600px) {
     .container {
         font-size: 1.2rem;
-        /* background-color: red; */
+        background-color: red;
     }
     .position-container {
         font-size: 1.2rem;
@@ -104,6 +99,11 @@
     .fa-star{
         font-size: 3vw;
         color: #ffe340;
+        padding-right: 0.5vw;
+    }
+
+    .fa-angle-right{
+        font-size: 4vw;
     }
 }
 
@@ -111,7 +111,7 @@
  @media only screen and (min-width: 600px) {
     .container {
     font-size: 1.2rem;
-    /* background-color: green;  */
+    background-color: green; 
     }
     .position-container {
         font-size: 1.2rem;
@@ -132,7 +132,11 @@
     .fa-star{
         font-size: 2.3vw;
         color: #ffe340;
-        padding-right: 20%;
+        padding-right: 0.5vw;
+    }
+
+    .fa-angle-right{
+        font-size: 4vw;
     }
 }
  
@@ -140,7 +144,7 @@
  @media only screen and (min-width: 768px) {
      .container {
     font-size: 1.2rem;
-    /* background-color: blue;  */
+    background-color: blue; 
     }
     .position-container {
         font-size: 1.2rem;
@@ -159,16 +163,20 @@
     .fa-star{
         font-size: 2vw;
         color: #ffe340;
-        padding-right: 20%;
+        margin-left: 0;
+        padding-right: 0.5vw;
     }
 
+    .fa-angle-right{
+        font-size: 3.3vw;
+    }
 }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
     .container {
         font-size: 1.2rem;
-        /* background-color: yellow;  */
+        background-color: yellow; 
     }
     .position-container {
         font-size: 1.2rem;
@@ -182,12 +190,18 @@
         font-size: 1.3em;
     }
     .pl-1 {
-        font-size: 1.5vw;
+        font-size: 1.5vw; 
     }
     .fa-star{
         font-size: 1.5vw;
         color: #ffe340;
-        padding-right: 20%;
+        margin-left: 0;
+        padding-right: 0.5vw;
+    }
+
+    /* custom styling for all font awesome icons*/
+    .fa-angle-right{
+        font-size: 3.2vw;
     }
  }
  
@@ -195,7 +209,7 @@
  @media only screen and (min-width: 1200px) {
     .container {
         font-size: 1.2rem;
-        /* background-color: lightblue;  */
+        background-color: lightblue; 
      }
      .position-container {
         font-size: 1.2rem;
@@ -214,8 +228,12 @@
     .fa-star{
         font-size: 1.0vw;
         color: #ffe340;
+        padding-right: 0.5vw;
     }
 
+    .fa-angle-right{
+        font-size: 3.3vw;
+    }
 
  } 
 

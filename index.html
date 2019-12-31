@@ -32,7 +32,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset='80'>
+<body id="bootstrap-overrides" data-spy="scroll" data-target=".navbar" data-offset='80'>
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -72,7 +72,7 @@
   <div class="container">
 
       <!--About me overview-->
-      <div id="about" class="overview bg-warning">
+      <div id="about" class="overview">
             <!-- <video class="video-bg" autoplay muted loop>
               <source src="images/network2.webm" type="video/webm">
             </video> -->
@@ -155,7 +155,7 @@
       </div>
 
       <!--CV header-->
-      <div id ="cv" class="container-fluid bg-info my-section">
+      <div id ="cv" class="container-fluid my-section">
         <h1 class="display-4 text-center p-4" >Curriculum Vitae</h1>  
           <div class ="cv-animation text-center">
             <img class="img-fluid cv-img" src="images/ai2.jpg" alt="A nice image should be displayed here">
@@ -168,7 +168,7 @@
         </div>
 
       <!-- Positions and Educations -->
-      <div class="container-fluid bg-warning my-section">
+      <div class="container-fluid  my-section">
         <div class= "position-container pt-3">
         <h1 class = "h1">Positions</h1>
         <br>
@@ -312,8 +312,6 @@
         </div>
         </div>
       </div>
-        <br>
-        <br>
 
         <!-- Educations -->
         <div class= "edu-container">
@@ -364,17 +362,13 @@
                   </div>
                 </div>
         </div>
-        <br>
-        <br>
 
         </div>
       </div>
 
       <!-- Skill header-->
-      <div id ="skills" class="container-fluid bg-success my-section">
-        <div class="row">
-           <h3>Skills</h3>
-        </div>
+      <div id = "skills" class="container-fluid my-section skillhead-container">
+        <h1 class="display-4">Skills</h1>
      </div>
 
       <!--IT Skills and competences-->
@@ -477,7 +471,12 @@
       </div>
 
       <!-- Project header-->
-      <div id="projects" class="container-fluid bg-info my-section">
+      <div id = "skills" class="container-fluid my-section skillhead-container">
+        <h1 class="display-4">Projects</h1>
+      </div>
+
+      <!-- Project header-->
+      <div id="projects" class="container-fluid my-section">
         <div class="row">
             <h3>My Projects</h3>
         </div>

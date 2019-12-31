@@ -3,8 +3,6 @@
     color: #e91d2b
 }
 
-.fa-
-
 /*Scroll to top button*/
 #btnScrollToTop{
     position: fixed; /*button floads on top of all the contet*/
@@ -31,13 +29,19 @@
     background-color: rgb(255, 115, 0);
 }
 
+/*center skills header*/
+.skillhead-container {
+    display: grid;
+    place-items: center;
+}
+
 
 .card-header {padding: 0px}
 
 .my-section {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    min-height: 30vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    min-height: 50vh;
 }
  
 .p-text {
@@ -79,7 +83,7 @@
  @media only screen and (max-width: 600px) {
     .container {
         font-size: 1.2rem;
-        background-color: red;
+        /* background-color: red; */
     }
     .position-container {
         font-size: 1.2rem;
@@ -88,7 +92,10 @@
     .h1 {
         font-weight: bold;
         font-size: 1.3em;
+        margin-bottom: 0;
+        padding:0;
     }
+
     .h4 {
         font-weight: bold;
         font-size: 1.0em;
@@ -111,7 +118,7 @@
  @media only screen and (min-width: 600px) {
     .container {
     font-size: 1.2rem;
-    background-color: green; 
+    /* background-color: green;  */
     }
     .position-container {
         font-size: 1.2rem;
@@ -120,6 +127,8 @@
     .h1 {
         font-weight: bold;
         font-size: 1.4em;
+        margin-bottom: 0;
+        padding:0;
     }
 
     .h4 {
@@ -144,7 +153,7 @@
  @media only screen and (min-width: 768px) {
      .container {
     font-size: 1.2rem;
-    background-color: blue; 
+    /* background-color: blue;  */
     }
     .position-container {
         font-size: 1.2rem;
@@ -152,7 +161,10 @@
     .h1 {
         font-weight: bold;
         font-size: 1.4em;
+        margin-bottom: 0;
+        padding:0;
     }
+
     .h4 {
         font-weight: bold;
         font-size: 1.2em;
@@ -176,15 +188,22 @@
  @media only screen and (min-width: 992px) {
     .container {
         font-size: 1.2rem;
-        background-color: yellow; 
+        vertical-align: middle;
+        /* background-color: yellow;  */
     }
     .position-container {
         font-size: 1.2rem;
     }
-    .h1 {
-        font-weight: bold;
-        font-size: 1.5em;
-    }
+    #bootstrap-overrides h1{
+        /*  resued display-4 styling*/
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+
+        margin-bottom: 0;
+        padding:0;
+    } 
+
     .h4 {
         font-weight: bold;
         font-size: 1.3em;
@@ -209,7 +228,7 @@
  @media only screen and (min-width: 1200px) {
     .container {
         font-size: 1.2rem;
-        background-color: lightblue; 
+        /* background-color: lightblue;  */
      }
      .position-container {
         font-size: 1.2rem;
@@ -217,8 +236,11 @@
     .h1 {
         font-weight: bold;
         font-size: 1.6em;
+        margin-bottom: 0 !important;
+        padding:0;
     }
-     .h4 {
+
+    .h4 {
         font-weight: bold;
         font-size: 1.4em;
     }

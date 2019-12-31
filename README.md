@@ -1,4 +1,4 @@
-# [Source files for https://thewoops.github.io/](https://thewoops.github.io/)
+# [Source files for thewoops.github.io/](https://thewoops.github.io/)
 
 [https://thewoops.github.io/](https://thewoops.github.io/) is a responsive landing page about myself hosted on Github and Azure.
 

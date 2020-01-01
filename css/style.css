@@ -126,7 +126,7 @@
     /* adjust position body */
     .pos-body {
         padding-left: 0;
-        font-size: 4.3vw;
+        font-size:calc(12px + 0.4vw);
     }
 }
 
@@ -162,10 +162,11 @@
     /* adjust position body */
     .pos-body {
         padding-left: 0;
-        font-size: 2.3vw;
+        font-size:calc(12px + 0.7vw);
     }
 
     .fa-angle-right{
+        
         font-size: 4vw;
     }
 
@@ -207,7 +208,7 @@
     /* adjust position body */
     .pos-body {
         padding-left: 0;
-        font-size: 2vw;
+        font-size:calc(12px + 0.6vw);
     }
 }
  
@@ -247,7 +248,7 @@
     /* adjust position body */
     .pos-body {
         padding-left: 0;
-        font-size: 1.5vw;
+        font-size:calc(12px + 0.5vw);
     }
 
     /* custom styling for all font awesome icons*/
@@ -287,7 +288,7 @@
     /* adjust position body */
     .pos-body {
         padding-left: 0;
-        font-size: 1vw;
+        font-size:calc(12px + 0.3vw);
     }
 
     .fa-angle-right{

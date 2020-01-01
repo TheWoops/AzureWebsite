@@ -35,6 +35,17 @@
     place-items: center;
 }
 
+/* adjust position body */
+.pos-body {
+    padding-left: 0;
+    font-size: 4.3vw;
+}
+
+.pos-ul {
+    margin-bottom:0;
+}
+
+
 
 .card-header {padding: 0px}
 
@@ -112,6 +123,11 @@
     .fa-angle-right{
         font-size: 4vw;
     }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size: 4.3vw;
+    }
 }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -143,10 +159,16 @@
         color: #ffe340;
         padding-right: 0.5vw;
     }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size: 2.3vw;
+    }
 
     .fa-angle-right{
         font-size: 4vw;
     }
+
 }
  
  /* Medium devices (landscape tablets, 768px and up) -ipad? */
@@ -181,6 +203,11 @@
 
     .fa-angle-right{
         font-size: 3.3vw;
+    }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size: 2vw;
     }
 }
  
@@ -217,6 +244,11 @@
         margin-left: 0;
         padding-right: 0.5vw;
     }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size: 1.5vw;
+    }
 
     /* custom styling for all font awesome icons*/
     .fa-angle-right{
@@ -251,6 +283,11 @@
         font-size: 1.0vw;
         color: #ffe340;
         padding-right: 0.5vw;
+    }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size: 1vw;
     }
 
     .fa-angle-right{

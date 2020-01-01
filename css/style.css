@@ -30,7 +30,7 @@
 }
 
 /*center skills header*/
-.skillhead-container {
+.center-container{
     display: grid;
     place-items: center;
 }
@@ -70,7 +70,7 @@
 }
 
 
-.overview{
+.video-support{
     position: relative;
     top:0;
     left:0;
@@ -119,6 +119,10 @@
         color: #ffe340;
         padding-right: 0.5vw;
     }
+    .fa-github {
+        font-size: 20vw;
+        color: black;
+    }
 
     .fa-angle-right{
         font-size: 4vw;
@@ -158,6 +162,10 @@
         font-size: 2.3vw;
         color: #ffe340;
         padding-right: 0.5vw;
+    }
+    .fa-github {
+        font-size: 20vw;
+        color: black;
     }
     /* adjust position body */
     .pos-body {
@@ -200,6 +208,10 @@
         color: #ffe340;
         margin-left: 0;
         padding-right: 0.5vw;
+    }
+    .fa-github {
+        font-size: 15vw;
+        color: black;
     }
 
     .fa-angle-right{
@@ -245,6 +257,10 @@
         margin-left: 0;
         padding-right: 0.5vw;
     }
+    .fa-github {
+        font-size: 10vw;
+        color: black;
+    }
     /* adjust position body */
     .pos-body {
         padding-left: 0;
@@ -284,6 +300,10 @@
         font-size: 1.0vw;
         color: #ffe340;
         padding-right: 0.5vw;
+    }
+    .fa-github {
+        font-size: 10vw;
+        color: black;
     }
     /* adjust position body */
     .pos-body {

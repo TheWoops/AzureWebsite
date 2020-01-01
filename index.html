@@ -32,7 +32,7 @@
 
 </head>
 
-<body id="bootstrap-overrides" data-spy="scroll" data-target=".navbar" data-offset='80'>
+<body id="bootstrap-overrides" data-spy="scroll" data-target=".navbar" data-offset='70'>
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -76,22 +76,20 @@
             <!-- <video class="video-bg" autoplay muted loop>
               <source src="images/network2.webm" type="video/webm">
             </video> -->
-
           <!-- Heading Row -->
           <div class="row align-items-center my-5">
             <div class="col-lg-7">
               <img class="img-fluid rounded mb-4 mb-lg-0" src="images/create.jpg" alt="">
             </div>
-            <!-- /.col-lg-8 -->
             <div class="col-lg-5">
               <h1 class ="h1">About me </h1>
               <br>
 
-              <p class="p-text">I'm a fresh graduate with a masters degree in business informatics.
-                I am interested in developments having positive real world impact in the near term.
-                Since I don't like the term "AI", some of my interest fields are better described as "Machine and Deep Learning", "Natural Language Processing" and "Business Intelligence". </p>
+              <p class="p-text">I am a graduate with a masters degree in business informatics.
+                I'm interested in all developments related to "Artifical Intelligence".
+                Since "AI" is a quite misleading term, I would better describe my fields of interest as "everything related to data analysis"
+                which can have positive real world impact in the near term.</p>
               <h4 class="font-weight-light">Fields of interests <i class="fas fa-heart"></i></h4>
-
               <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="top" title="Machine & Deep Learning">
               Machine & Deep Learning
               </button>
@@ -154,26 +152,27 @@
           </div>
       </div>
 
+      <hr id = "cv">
       <!--CV header-->
-      <div id ="cv" class="container-fluid my-section">
-        <h1 class="display-4 text-center p-4" >Curriculum Vitae</h1>  
-          <div class ="cv-animation text-center">
-            <img class="img-fluid cv-img" src="images/ai2.jpg" alt="A nice image should be displayed here">
-          </div>
-            <p class="lead text-center mb-0">
-              I Studied <strong>Industrial Engineering</strong> and <strong>Business Informatics with focus on Data Science and Consulting</strong>.<br>
-              During my bachelor studies I gained work experience in several departments at Bosch Rexroth AG.<br>
-              After relocating to Mannheim, Germany I focues on improving my programming and analytical skills at Movilitas and Sovanta.
-            </p>
+      <div class="row align-items-center mt-4">
+        <div class="col-lg-12">
+          <h1 class ="h1 text-center">Curriculum Vitae</h1>
+          <br>
+          <p class="p-text">
+            I Studied Industrial Engineering and Business Informatics with focus on Data Science and Consulting.
+            During my bachelor studies I gained work experience in several departments at Bosch Rexroth AG.
+            After relocating to Mannheim, Germany I focused on improving my programming and analytical skills at Movilitas Consulting Gmbh and Sovanta AG.        
+          </p>
         </div>
+      </div>
 
       <!-- Positions and Educations -->
-      <div class="container-fluid  my-section">
+      <div class="container-fluid">
         <div class= "position-container pt-3">
-        <h1 class = "h1">Positions</h1>
+           <h3 class="h3-responsive">Positions</h3>
         <br>
         
-        <div class = "cv-body">
+      <div class = "cv-body">
         <div class="col-sm-12 col-md-12 col-lg-12">
           <div class="accordion" id="accordionExample">
 
@@ -315,7 +314,7 @@
 
         <!-- Educations -->
         <div class= "edu-container">
-        <h1 class = "h1">Education</h1>
+          <h3 class="h3-responsive">Education</h3>
           <br>
 
               <div class="col-sm-12 col-md-12 col-lg-12">
@@ -366,15 +365,23 @@
         </div>
       </div>
 
+      <hr id = "skills">
       <!-- Skill header-->
-      <div id = "skills" class="container-fluid my-section skillhead-container">
-        <h1 class="display-4">Skills</h1>
-     </div>
+      <div class="row align-items-center mt-4">
+        <div class="col-lg-12">
+          <h1 class ="h1">Skills</h1>
+          <br>
+          <p class="p-text">
+            I'm a highly-motived Data Scientist / Software Engineer / Business Analyst with special programming skills in python. 
+            I'm an analytical thinking personality who likes working in a team and is open to learn new technologies.       
+            </p>
+        </div>
+      </div>
 
       <!--IT Skills and competences-->
       <div class="container-fluid my-section">
         <div class="row">
-           <h3>IT skills and competences</h3>
+           <h3 class ="h3">IT skills and competences</h3>
         </div>
         <br>
         <div class = "container">
@@ -470,6 +477,7 @@
           </div>
       </div>
 
+      <hr>
       <!-- Project header-->
       <div id = "skills" class="container-fluid my-section skillhead-container">
         <h1 class="display-4">Projects</h1>
@@ -522,6 +530,11 @@
                   )
             }
         });
+    });
+
+    // enables navbar collapse on click
+    $('.navbar-nav>li>a').on('click', function(){
+       $('.navbar-collapse').collapse('hide');
     });
 
   </script>

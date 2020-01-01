@@ -22,7 +22,6 @@
 /*Scrollbar - not working in firefox*/
 ::-webkit-scrollbar{
         width: 20px;
-
         background-color: #105685;
     }
 ::-webkit-scrollbar-thumb{

@@ -3,13 +3,58 @@
     color: #e91d2b
 }
 
-.card-header {padding: 0px}
-
-
-.edu-fa-ul {
-    margin-bottom: 0;
+/*Scroll to top button*/
+#btnScrollToTop{
+    position: fixed; /*button floads on top of all the contet*/
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #105685;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
+/*Scrollbar - not working in firefox*/
+::-webkit-scrollbar{
+        width: 20px;
+
+        background-color: #105685;
+    }
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 115, 0);
+}
+
+/*center skills header*/
+.center-container{
+    display: grid;
+    place-items: center;
+}
+
+/* adjust position body */
+.pos-body {
+    padding-left: 0;
+    font-size: 4.3vw;
+}
+
+.pos-ul {
+    margin-bottom:0;
+}
+
+
+
+.card-header {padding: 0px}
+
+.my-section {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    min-height: 50vh;
+}
+ 
 .p-text {
     text-align: justify;
     hyphens: auto;
@@ -25,7 +70,7 @@
 }
 
 
-.overview{
+.video-support{
     position: relative;
     top:0;
     left:0;
@@ -58,7 +103,10 @@
     .h1 {
         font-weight: bold;
         font-size: 1.3em;
+        margin-bottom: 0;
+        padding:0;
     }
+
     .h4 {
         font-weight: bold;
         font-size: 1.0em;
@@ -69,7 +117,20 @@
     .fa-star{
         font-size: 3vw;
         color: #ffe340;
-        padding-right: 20%;
+        padding-right: 0.5vw;
+    }
+    .fa-github {
+        font-size: 20vw;
+        color: black;
+    }
+
+    .fa-angle-right{
+        font-size: 4vw;
+    }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size:calc(12px + 0.4vw);
     }
 }
 
@@ -86,6 +147,8 @@
     .h1 {
         font-weight: bold;
         font-size: 1.4em;
+        margin-bottom: 0;
+        padding:0;
     }
 
     .h4 {
@@ -98,8 +161,23 @@
     .fa-star{
         font-size: 2.3vw;
         color: #ffe340;
-        padding-right: 20%;
+        padding-right: 0.5vw;
     }
+    .fa-github {
+        font-size: 20vw;
+        color: black;
+    }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size:calc(12px + 0.7vw);
+    }
+
+    .fa-angle-right{
+        
+        font-size: 4vw;
+    }
+
 }
  
  /* Medium devices (landscape tablets, 768px and up) -ipad? */
@@ -114,7 +192,10 @@
     .h1 {
         font-weight: bold;
         font-size: 1.4em;
+        margin-bottom: 0;
+        padding:0;
     }
+
     .h4 {
         font-weight: bold;
         font-size: 1.2em;
@@ -125,35 +206,70 @@
     .fa-star{
         font-size: 2vw;
         color: #ffe340;
-        padding-right: 20%;
+        margin-left: 0;
+        padding-right: 0.5vw;
+    }
+    .fa-github {
+        font-size: 15vw;
+        color: black;
     }
 
+    .fa-angle-right{
+        font-size: 3.3vw;
+    }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size:calc(12px + 0.6vw);
+    }
 }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
     .container {
         font-size: 1.2rem;
+        vertical-align: middle;
         /* background-color: yellow;  */
     }
     .position-container {
         font-size: 1.2rem;
     }
-    .h1 {
-        font-weight: bold;
-        font-size: 1.5em;
-    }
+    #bootstrap-overrides h1{
+        /*  resued display-4 styling*/
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+
+        margin-bottom: 0;
+        padding:0;
+    } 
+
     .h4 {
         font-weight: bold;
         font-size: 1.3em;
     }
     .pl-1 {
-        font-size: 1.5vw;
+        font-size: 1.5vw; 
     }
     .fa-star{
         font-size: 1.5vw;
         color: #ffe340;
-        padding-right: 20%;
+        margin-left: 0;
+        padding-right: 0.5vw;
+    }
+    .fa-github {
+        font-size: 10vw;
+        color: black;
+    }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size:calc(12px + 0.5vw);
+    }
+
+    /* custom styling for all font awesome icons*/
+    .fa-angle-right{
+        font-size: 3.2vw;
     }
  }
  
@@ -169,8 +285,11 @@
     .h1 {
         font-weight: bold;
         font-size: 1.6em;
+        margin-bottom: 0 !important;
+        padding:0;
     }
-     .h4 {
+
+    .h4 {
         font-weight: bold;
         font-size: 1.4em;
     }
@@ -180,9 +299,24 @@
     .fa-star{
         font-size: 1.0vw;
         color: #ffe340;
-        padding-right: 20%;
+        padding-right: 0.5vw;
     }
+    .fa-github {
+        font-size: 10vw;
+        color: black;
+    }
+    /* adjust position body */
+    .pos-body {
+        padding-left: 0;
+        font-size:calc(12px + 0.3vw);
+    }
+
+    .fa-angle-right{
+        font-size: 3.3vw;
+    }
+
  } 
+
 
 
 

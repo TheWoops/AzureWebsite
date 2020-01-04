@@ -60,9 +60,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -116,7 +116,7 @@
                   <p class="card-text">I Studied Industrial Engineering and Business Informatics with focus on Data Science and Consulting.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="cv.html" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#cv" class="btn btn-primary btn-sm">More Info</a>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@
                   <p class="card-text">This is a short overview about my IT competencies and programming skills.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#skills" class="btn btn-primary btn-sm">More Info</a>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@
                   <p class="card-text">I dont like only reading about latest trends and technologies. I also want to get my hands wet. Here some of my projects are listed.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#projects" class="btn btn-primary btn-sm">More Info</a>
                 </div>
               </div>
             </div>
@@ -468,8 +468,9 @@
       $("html, body").animate({ scrollTop: 0}, "slow");
     })
 
- 
+    // navigate to section (navbar)
     $(document).ready(function() {
+
         $("nav div div ul li a").on('click', function(evt) {
             evt.preventDefault();
             var offset = $(this.hash).offset();
@@ -479,6 +480,25 @@
                   )
             }
         });
+
+        $(".card-footer a").on('click', function(evt) {
+           console.log(this.hash)
+            evt.preventDefault();
+            var offset = $(this.hash).offset();
+            if (offset) {
+                $('html, body').animate({
+                    scrollTop: offset.top-56}, 800, 'linear'
+                  )
+            }
+        });
+
+
+
+
+
+
+
+
     });
 
     // enables navbar collapse on click

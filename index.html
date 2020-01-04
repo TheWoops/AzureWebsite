@@ -60,9 +60,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -81,11 +81,12 @@
             <div class="col-lg-5">
               <h1 class ="h1">About me </h1>
               <br>
-
-              <p class="p-text">I am a graduate with a masters degree in business informatics.
-                I'm interested in all developments related to "Artifical Intelligence".
-                Since "AI" is a quite misleading term, I would better describe my fields of interest as "everything related to data analysis"
-                which can have positive real world impact in the near term.</p>
+              <p class="p-text">Hi,</p> 
+              <p class="p-text">
+                my name is Markus. I come from Germany and love to solve problems with data.<br>
+                Whether it's either about a business process nobody really understands or finding hidden opportunities:
+                I want to provide actionable insights using the new oil.
+                I am an analytical thinking personality, beeing passionate about learning new technlogies.</p>
               <h4 class="font-weight-light">Fields of interests <i class="fas fa-heart"></i></h4>
               <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="top" title="Machine & Deep Learning">
               Machine & Deep Learning
@@ -96,6 +97,9 @@
               <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Combines business analytics, data mining and data visualization to enable more data-driven decisions.">
               Business intelligence
               </button>
+              <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Combines business analytics, data mining and data visualization to enable more data-driven decisions.">
+                Cloud Computing
+                </button>
             </div>
           </div>
 
@@ -116,7 +120,7 @@
                   <p class="card-text">I Studied Industrial Engineering and Business Informatics with focus on Data Science and Consulting.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="cv.html" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#cv" class="btn btn-primary btn-sm">More Info</a>
                 </div>
               </div>
             </div>
@@ -129,7 +133,7 @@
                   <p class="card-text">This is a short overview about my IT competencies and programming skills.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#skills" class="btn btn-primary btn-sm">More Info</a>
                 </div>
               </div>
             </div>
@@ -139,10 +143,11 @@
                 <img src="images/drone.jpg" width="100px", height = "200px" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h2 class="card-title">Projects</h2>
-                  <p class="card-text">I dont like only reading about latest trends and technologies. I also want to get my hands wet. Here some of my projects are listed.</p>
+                  <p class="card-text">I am curious and one of the best ways to learn new stuff is to try them out.
+                    Here some of my projects are listed.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#projects" class="btn btn-primary btn-sm">More Info</a>
                 </div>
               </div>
             </div>
@@ -158,7 +163,7 @@
           <p class="p-text">
             I Studied Industrial Engineering and Business Informatics with focus on Data Science and Consulting.
             During my bachelor studies I gained work experience in several departments at Bosch Rexroth AG.
-            After relocating to Mannheim, Germany I focused on improving my programming and analytical skills at Movilitas Consulting Gmbh and Sovanta AG.        
+            After relocating to Mannheim I focused on improving my programming and analytical skills at Movilitas and Sovanta .        
           </p>
         </div>
       </div>
@@ -172,7 +177,7 @@
               <h2 class="mb-0">
                 <button class="btn btn-block active text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <h4 class = "h4">
-                    Working student Data Sciences <br>
+                    Working student Data Science<br>
                     <small class="text-muted">Sovanta AG<br> 05/2019 - until now | Heidelberg</small>
                 </h4>
                 </button>
@@ -335,8 +340,8 @@
           <h1 class ="h1">Skills</h1>
           <br>
           <p class="p-text">
-            I'm a highly-motived Data Scientist / Software Engineer / Business Analyst with special programming skills in python. 
-            I'm an analytical thinking personality who likes working in a team and is open to learn new technologies.       
+            I'm a highly-motived Data Scientist / Software Engineer / Business Analyst with special knowledge in Python. <br>
+            I am goal-oriented and I like working in international teams.       
             </p>
         </div>
       </div>
@@ -468,8 +473,9 @@
       $("html, body").animate({ scrollTop: 0}, "slow");
     })
 
- 
+    // navigate to section (navbar)
     $(document).ready(function() {
+
         $("nav div div ul li a").on('click', function(evt) {
             evt.preventDefault();
             var offset = $(this.hash).offset();
@@ -479,6 +485,20 @@
                   )
             }
         });
+
+        $(".card-footer a").on('click', function(evt) {
+           console.log(this.hash)
+            evt.preventDefault();
+            var offset = $(this.hash).offset();
+            if (offset) {
+                $('html, body').animate({
+                    scrollTop: offset.top-56}, 800, 'linear'
+                  )
+            }
+        });
+
+
+
     });
 
     // enables navbar collapse on click

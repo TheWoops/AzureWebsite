@@ -18,17 +18,16 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- CSS Templates -->
   <link href="css/small-business.css" rel="stylesheet">
+  <link href="css\Hover-master\css\hover-min.css" rel="stylesheet">  <!--use min version later -->
 
   <!-- Fontawesome -->
   <link rel=stylesheet href="css/all.min.css" >
   <link rel=stylesheet href="css/fontawesome.min.css" >
 
-
   <!-- My stylesheet -->
   <link rel="stylesheet" href = "css/style.css">
-
 
 </head>
 
@@ -37,7 +36,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand hvr-grow" href="index.html">
            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         The Woops
       </a>
@@ -85,28 +84,28 @@
               <p class="p-text">
                 my name is Markus and I love to solve problems with software.<br>
                 Whether it's either about bringing a business process to the next level or about finding hidden opportunities:
-                I want to provide actionable insights using the power of data analytics.
+                I want to provide actionable insights using the power of data analytics and teamwork.
                 I'm an analytical thinking personality, beeing passionate about learning new technologies.</p>
               <h4 class="font-weight-light">Fields of interests <i class="fas fa-heart"></i></h4>
-              <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="top" title="Machine & Deep Learning">
+              <button type="button" class="badge badge badge-primary" data-toggle="tooltip" data-placement="left" title="Developing cutting edge software solutions using hidden patterns in data">
               Machine & Deep Learning
               </button>
-              <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="top" title="Natural Language Processing">
+              <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="right" title="Processing human language in spoken or written form to reduce low-level repetitive tasks">
               Natural Language Processing
               </button>
-              <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Combines business analytics, data mining and data visualization to enable more data-driven decisions.">
+              <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="left" title="Combining business analytics, data mining and powerful visualizations to enable data-driven decisions.">
               Business intelligence
               </button>
-              <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Combines business analytics, data mining and data visualization to enable more data-driven decisions.">
+              <button type="button" class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Leveraging decentralized data storage and computing power">
                 Cloud Computing
                 </button>
             </div>
           </div>
 
           <!-- Call to Action Well -->
-          <div class="card text-white bg-secondary my-5 py-4 text-center">
-            <div class="card-body">
-              <p class="text-white m-0 ">"It's not the challenge to turn information into insights, it's the translation of real world problems into analytical projects"</p>
+          <div class="card my-5 py-4 text-center" style="border: 0;">
+            <div class="card-body hvr-grow hvr-float-shadow">
+              <p class="m-0 lead ">It's not the challenge to turn information into insights, it's the translation of real world problems into analytical projects"</p>
             </div>
           </div>
 
@@ -120,7 +119,7 @@
                   <p class="card-text">I Studied Industrial Engineering and Business Informatics with focus on Data Science and Consulting.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#cv" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#cv" class="btn btn-primary btn-sm hvr-grow">More Info</a>
                 </div>
               </div>
             </div>
@@ -133,7 +132,7 @@
                   <p class="card-text">This is a short overview about my IT competencies and programming skills.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#skills" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#skills" class="btn btn-primary btn-sm hvr-grow">More Info</a>
                 </div>
               </div>
             </div>
@@ -147,18 +146,20 @@
                     Here some of my projects are listed.</p>
                 </div>
                 <div class="card-footer">
-                  <a href="#projects" class="btn btn-primary btn-sm">More Info</a>
+                  <a href="#projects" class="btn btn-primary btn-sm hvr-grow">More Info</a>
+                  <div id = "cv" ></div>
                 </div>
               </div>
             </div>
           </div>
       </div>
 
-      <hr id = "cv">
+      
+
       <!--CV header-->
-      <div class="row align-items-center mt-4">
-        <div class="col-lg-12">
-          <h1 class ="h1 text-center">Curriculum Vitae</h1>
+      <div class="row align-items-center pt-5 hvr-overline-from-left">
+        <div class="col-lg-12 ">
+          <h1 class ="h1 text-center ">Curriculum Vitae</h1>
           <br>
           <p class="p-text">
             I Studied Industrial Engineering and Business Informatics with focus on Data Science and Consulting.
@@ -169,7 +170,7 @@
       </div>
 
       <!-- Position -->
-      <h3 class="h3 mb-4 mt-3">Positions</h3>   
+      <h3 class="h3 mb-4 my-5">Positions</h3>   
       
       <div class="accordion" id="accordionExample">
          <div class="card shadow">
@@ -291,7 +292,7 @@
       </div>
 
       <!-- Educations -->
-      <h3 class="h3 mb-4 mt-5">Education</h3>   
+      <h3 class="h3 mb-4 my-5">Education</h3>   
       <div class="card shadow">
           <div class="card-header" id="headingEduOne">
                 <button class="btn btn-block active text-left" type="button" data-toggle="collapse" data-target="#collapseEduOne" aria-expanded="true" aria-controls="collapseTwo">
@@ -313,7 +314,7 @@
           </div>
 
       </div>
-      <div class="card shadow">
+      <div class="card shadow mb-5">
         <div class="card-header" id="headingTwo">
             <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseEduTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <h4 class = "h4">
@@ -331,11 +332,13 @@
             </ul>
           </div>
         </div>
+        <div id = "skills" ></div>
       </div>
 
-      <hr id = "skills">
+      <!-- <hr id = "skills"> -->
+      
       <!-- Skill header-->
-      <div class="row align-items-center mt-4">
+      <div class="row align-items-center pt-5 hvr-overline-from-left">
         <div class="col-lg-12">
           <h1 class ="h1">Skills</h1>
           <br>
@@ -347,7 +350,7 @@
       </div>
 
       <!--IT Skills and competences-->
-      <h3 class="h3 mb-4 mt-3">IT skills and competences</h3>  
+      <h3 class="h3 mb-4 my-5">IT skills and competences</h3>  
       <ul class="list-unstyled">
         <li class="media">
           <i class="fas fa-angle-right d-flex mr-3 align-self-center"></i>
@@ -411,9 +414,8 @@
       </ul>
           
       <!--Language Skills-->
+      <h3 class="h3 mb-4 my-5">Language Skills</h3>
       <div>
-      <h3 class="h3 mb-1 mt-5">Language Skills</h3>  
-        <br>
         <div class="progress" style="height: 3.5vh;">
           <div class="progress-bar"  role="progressbar" style="width: 100%; background-color:#105685 !important;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">German</div>
         </div>
@@ -496,13 +498,16 @@
             }
         });
 
-
-
     });
 
     // enables navbar collapse on click
     $('.navbar-nav>li>a').on('click', function(){
        $('.navbar-collapse').collapse('hide');
+    });
+
+    //enable all tooltips in the document
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
     });
 
   </script>

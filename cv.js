@@ -58,13 +58,13 @@ $(document).ready(function(){
     });
     $('.S4').click(() => {
         $('html, body').animate({
-              scrollTop: $('.S5').offset().top
+              scrollTop: $('#contact').offset().top
         }, 1000);
     });
     $('.S5').click(() => {
-        $('html, body').animate({
-              scrollTop: $('.S1').offset().top
-        }, 1000);
-    });
+      $('html, body').animate({
+            scrollTop: $('.S1').offset().top
+      }, 1000);
+  });
 
 });

@@ -57,16 +57,18 @@ $(document).ready(function(){
               scrollTop: $('.S4').offset().top
         }, 1000);
     });
-    */
+    
     $('.S4').click(() => {
         $('html, body').animate({
               scrollTop: $('#contact').offset().top
         }, 1000);
     });
+    
     $('.S5').click(() => {
       $('html, body').animate({
             scrollTop: $('.S1').offset().top
       }, 1000);
   });
+  */
 
 });

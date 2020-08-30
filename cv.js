@@ -51,11 +51,13 @@ $(document).ready(function(){
               scrollTop: $('.S3').offset().top
         }, 1000);
     });
+    /*
     $('.S3').click(() => {
         $('html, body').animate({
               scrollTop: $('.S4').offset().top
         }, 1000);
     });
+    */
     $('.S4').click(() => {
         $('html, body').animate({
               scrollTop: $('#contact').offset().top

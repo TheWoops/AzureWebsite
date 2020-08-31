@@ -41,6 +41,7 @@ $('#navigation a').on('click', function(e) {
 $(document).ready(function(){
 
     // scroll to next section if clicked
+    /*
     $('.S1').click(() => {
       $('html, body').animate({
             scrollTop: $('.S2').offset().top
@@ -51,7 +52,6 @@ $(document).ready(function(){
               scrollTop: $('.S3').offset().top
         }, 1000);
     });
-    /*
     $('.S3').click(() => {
         $('html, body').animate({
               scrollTop: $('.S4').offset().top

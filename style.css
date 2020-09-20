@@ -409,7 +409,6 @@ p, span, a{
 }
 
 
-
 #portfolio .row div .overlay {
     position: absolute;
     top: 0;
@@ -437,12 +436,11 @@ p, span, a{
 #portfolio .row div .overlay h4{
     color: #f7f7f7;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -200%);
             transform: translate(-50%, -200%);
     -ms-transform: translate(-50%, -200%);
-    letter-spacing: .05em;
 }
 
 .overlay h4.project-title{

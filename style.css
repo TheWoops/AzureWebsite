@@ -1,13 +1,49 @@
 body{
-	position: relative;
+    position: relative;
+    font-size: calc(12px + 0.35vw);
+    line-height: calc(12px + 1.05vw); /* Responsive Vertical Rhythm */
 }
 
-h1, h2, h3, h4, h5, h6{
+.main-ctnr{
+    width: 100%; /* For small screens */
+    max-width: 1280px; /* For large screens */
+    margin: auto; /* Center the container in the viewport */
+}
+
+h1 { 
+    font-size: 5.653em;
+    line-height: calc(18px + 4.8vw); /* Responsive Vertical Rhythm */  
+} 
+h2 { 
+    font-size: 3.998em; 
+    line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */
+    }
+h3 { 
+    font-size: 2.827em;
+    line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */
+ }
+h4 { 
+    font-size: 1.999em; 
+    line-height: calc(18px + .7vw); /* Responsive Vertical Rhythm */
+}
+h5 { 
+    font-size: 1.414em;
+    line-height: calc(18px + .2vw); /* Responsive Vertical Rhythm */
+}
+ 
+h6 {
+     font-size: 1em;
+}
+
+h1, h2, h3, h4, h5{
     font-family: "Lato", serif !important;
+    margin: calc(12px + 1.05vw) 0; /* Responsive margins */
 }
 
 p, span, a{
     font-family: "Raleway", sans-serif !important;
+    margin-bottom: 1.5em;
+
 }
 
 .button{
@@ -17,7 +53,6 @@ p, span, a{
     text-transform: uppercase;
     -webkit-transition: all .3s;
     transition: all .3s;
-    font-size: 16px;
 }
 
 /* Scrollbar */
@@ -51,16 +86,6 @@ p, span, a{
         background-size: initial !important;
         background-position: top !important;
 	}
-
-	#header h1{
-        font-size: 40px !important;
-    }
-
-    #header h4{
-        font-size: 16px !important;
-    }
-
-	#portfolio h2{font-size: 25px !important;}
 }
 
 
@@ -70,7 +95,15 @@ p, span, a{
 
 
 #header{
-	min-height: 100vh;
+    min-height: 100vh;
+    /*https://css-tricks.com/full-width-containers-limited-width-parents/*/
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
 	background-image: url(https://cdn-images-1.medium.com/max/1600/1*5XH40dQSsBVFtvx3MO5VwQ.png);
     background-size: cover;
     -moz-background-size: cover;
@@ -120,7 +153,6 @@ p, span, a{
     -webkit-transition: .3s;
     transition: .3s;
     letter-spacing: 1px;
-    font-size: 14px;
     padding: 0 !important;
 }
 
@@ -196,7 +228,6 @@ p, span, a{
 }
 
 #header h1{
-	font-size: 80px;
 	color: #F5F5F5;
 }
 
@@ -206,7 +237,6 @@ p, span, a{
 }
 
 #header h4{
-	font-size: 20px;
 	font-weight: normal;
 	color: #F5F5F5;
 }
@@ -223,7 +253,13 @@ p, span, a{
 #about{
 	padding-top: 80px;
 	padding-bottom: 80px;
-	background: #2B2B2B;
+    background: #2B2B2B;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 #about h2{
@@ -252,7 +288,13 @@ p, span, a{
 #cv{
 	padding-top: 80px;
 	padding-bottom: 80px;
-	background: #F7F7F7;
+    background: #F7F7F7;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 #cv  hr{
@@ -264,7 +306,6 @@ p, span, a{
 
 #cv .row h3{
 	border-bottom: 3px solid #11ABB0;
-	font-size: 24px;
 	padding-bottom: 5px;
     width: min-content;
     width: -webkit-min-content;
@@ -293,7 +334,6 @@ p, span, a{
 }
 
 #cv .skill-item > h4{
-	font-size: 16px;
 	color: #222;
 }
 
@@ -321,7 +361,6 @@ p, span, a{
 }
 
 #cv .box h4{
-	font-size: 20px;
 	color: #222;
 }
 
@@ -342,16 +381,21 @@ p, span, a{
 #portfolio{
 	padding: 80px 0;
     background: #EBEEEE;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 
-#portfolio h2{
+#portfolio h3{
     padding: 0;
     margin: auto;
     margin-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px;
     color: #666;
 }
 
@@ -390,9 +434,8 @@ p, span, a{
     border-radius: 0;
 }
 
-#portfolio .row div .overlay h3{
+#portfolio .row div .overlay h4{
     color: #f7f7f7;
-    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -402,7 +445,7 @@ p, span, a{
     letter-spacing: .05em;
 }
 
-.overlay h3.project-title{
+.overlay h4.project-title{
     -webkit-transform: translate(-50%, -50%) !important;
             transform: translate(-50%, -50%) !important;
     -ms-transform: translate(-50%, -50%) !important;
@@ -422,10 +465,15 @@ p, span, a{
     color: #F3F3F3;
     text-align: center;
     padding: 80px 0 100px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 #contact div.left > span{
-    font-size: 80px;
     color: #11ABB0;
     line-height: 0;
 }
@@ -437,7 +485,6 @@ p, span, a{
     text-align: left;
     text-transform: uppercase;
     color: #F5F5F5;
-    font-size: 25px;
 }
 
 #form{
@@ -484,7 +531,6 @@ p, span, a{
     display: block;
     width: 100%;
     padding: 0 12px 6px 0;
-    font-size: 14px;
     color: #F3F3F3;
     margin-top: 20px !important;
     height: 35px;
@@ -549,14 +595,12 @@ input:focus ~ .focus-border, textarea:focus ~ .focus-border{
     top: 25px !important;
     color: #AAA;
     text-align: left;
-    font-size: 16px;
     display: block;
     cursor: text;
     font-family: "Raleway", sans-serif;
 }
 
 input:focus ~ .label, textarea:focus ~ .label[for=message], input.has-value ~ .label, textarea.has-value ~ .label[for=message]{
-    font-size: 12px !important;
     top: 0px !important;
     color: #11ABB0 !important;
 }
@@ -603,6 +647,12 @@ footer{
     background: #0F0F0F;
     position: relative;
     padding: 80px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .footer-content{
@@ -628,7 +678,6 @@ footer{
 .footer-content a{
     display: inline-block;
     text-decoration: none;
-    font-size: 20px;
     color: #565656;
     -webkit-transition: .3s;
     transition: .3s;
@@ -647,7 +696,6 @@ footer h4{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 18px;
 }
 
 
